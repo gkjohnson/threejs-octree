@@ -1,7 +1,6 @@
 import * as THREE from '../node_modules/three/build/three.module.js';
 import Stats from '../node_modules/stats.js/src/Stats.js';
 import Octree from '../lib/Octree.js';
-import '../index.js';
 
 const bgColor = 0x263238 / 2;
 
@@ -27,7 +26,6 @@ const hoverMaterial = new THREE.MeshPhongMaterial( { color: 0xFFC107, emissive: 
 
 geom.computeBoundingSphere();
 geom.computeBoundingBox();
-geom.computeBoundsTree();
 
 scene.add( containerObj );
 
