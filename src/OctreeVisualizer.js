@@ -1,10 +1,9 @@
-import * as THREE from '../node_modules/three/build/three.module.js';
+import * as THREE from 'three';
 
 const wiremat = new THREE.LineBasicMaterial( { color: 0x00FF88, wireframe: true, wireframeLinewidth: 1, transparent: true, opacity: 0.5 } );
 const boxGeom = new THREE.Box3Helper().geometry;
 
-export default
-class OctreeVisualizer extends THREE.Object3D {
+export class OctreeVisualizer extends THREE.Object3D {
 
 	constructor( octree, depth = 10 ) {
 

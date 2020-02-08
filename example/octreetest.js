@@ -1,8 +1,7 @@
-import * as THREE from '../node_modules/three/build/three.module.js';
-import Stats from '../node_modules/stats.js/src/Stats.js';
-import OctreeVisualizer from '../lib/OctreeVisualizer.js';
-import Octree from '../lib/Octree.js';
-import '../index.js';
+import * as THREE from 'three';
+import Stats from 'three/examples/jsm/libs/stats.module.js';
+import { OctreeVisualizer } from '../lib/OctreeVisualizer.js';
+import { Octree } from '../lib/Octree.js';
 
 const bgColor = 0x263238 / 2;
 

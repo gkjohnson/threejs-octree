@@ -1,4 +1,4 @@
-import * as THREE from '../node_modules/three/build/three.module.js';
+import * as THREE from 'three';
 
 const X_FLAG = 1 << 0;
 const Y_FLAG = 1 << 1;
@@ -91,8 +91,7 @@ const iterateOverOctants = ( flags, cb ) => {
 };
 
 /* Classes */
-export default
-class OctreeNode {
+export class OctreeNode {
 
 	constructor( octree, parent = null, octant = - 1 ) {
 

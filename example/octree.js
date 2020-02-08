@@ -1,6 +1,7 @@
-import * as THREE from '../node_modules/three/build/three.module.js';
-import Stats from '../node_modules/stats.js/src/Stats.js';
-import Octree from '../lib/Octree.js';
+import * as THREE from 'three';
+import Stats from 'three/examples/jsm/libs/stats.module.js';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+import { Octree } from '../src/Octree.js';
 
 const bgColor = 0x263238 / 2;
 
@@ -10,6 +11,7 @@ renderer.setPixelRatio( window.devicePixelRatio );
 renderer.setSize( window.innerWidth, window.innerHeight );
 renderer.setClearColor( bgColor, 1 );
 document.body.appendChild( renderer.domElement );
+renderer.domElement.style.position = 'absolute';
 
 // scene setup
 const scene = new THREE.Scene();
@@ -244,7 +246,7 @@ window.addEventListener( 'mousemove', e => {
 window.addEventListener( 'resize', resizeFunc, false );
 resizeFunc();
 
-const controls = new window.THREE.OrbitControls( camera );
+const controls = new OrbitControls( camera );
 
 render();
 

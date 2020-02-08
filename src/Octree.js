@@ -1,12 +1,12 @@
-import * as THREE from '../node_modules/three/build/three.module.js';
-import OctreeNode from './OctreeNode.js';
+import * as THREE from 'three';
+import { OctreeNode } from './OctreeNode.js';
 // https://geidav.wordpress.com/2014/07/18/advanced-octrees-1-preliminaries-insertion-strategies-and-max-tree-depth/
 
 const X_FLAG = 1 << 0;
 const Y_FLAG = 1 << 1;
 const Z_FLAG = 1 << 2;
 
-class Octree {
+export class Octree {
 
 	constructor( options = {} ) {
 

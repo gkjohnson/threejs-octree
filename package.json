@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "start": "static-server",
-    "build": "parcel build ./example/octree.html --out-dir ./example/bundle/ --public-url . --no-cache --no-source-maps"
+		"start": "concurrently \"parcel watch ./example/*.html --out-dir ./example/bundle/ --public-url . --no-cache\" \"static-server\"",
+    "build": "parcel build ./example/*.html --out-dir ./example/bundle/ --public-url . --no-cache --no-source-maps"
   },
   "repository": {
     "type": "git",
@@ -14,15 +14,16 @@
   },
   "homepage": "https://github.com/gkjohnson/threejs-raycast-updates#readme",
   "peerDependencies": {
-    "three": "^0.89.0"
+    "three": ">=0.109.0"
   },
   "devDependencies": {
     "dat.gui": "^0.7.2",
     "eslint-config-mdcs": "^4.2.3",
-    "parcel-bundler": "^1.9.6",
-    "script-loader": "^0.7.2",
+    "parcel-bundler": "^1.12.4",
     "static-server": "^2.2.1",
-    "stats.js": "^0.17.0",
-    "three": "^0.89.0"
+    "three": "^0.109.0"
+  },
+  "dependencies": {
+    "concurrently": "^5.1.0"
   }
 }
