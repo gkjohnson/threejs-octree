@@ -21,7 +21,7 @@
     "eslint-config-mdcs": "^4.2.3",
     "parcel-bundler": "^1.12.4",
     "static-server": "^2.2.1",
-    "three": "^0.109.0"
+    "three": "^0.125.0"
   },
   "dependencies": {
     "concurrently": "^5.1.0"
