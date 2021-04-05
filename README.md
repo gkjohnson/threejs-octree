@@ -1,6 +1,8 @@
 # threejs-octree
 A rough octree implementation to support frustum culling and raycasts in complex THREE.js scenes.
 
+_NOTE: Code is generally unmatained and unfinished._
+
 ## TODO
 - Max depth is needed in case there are a bunch of objects right on top of eachother
 - Consider adding an optimization using SAH and constricting the bounding boxes a a bit more
